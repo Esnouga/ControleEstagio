@@ -22,7 +22,7 @@ public class SupervisorController {
 	@RequestMapping(value="/cadastroSupervisor", method=RequestMethod.POST)
 	public String form(Supervisor supervisor){
 		er.save(supervisor);
-		return "redirect:/cadastroSupervisor";
+		return "redirect:/";
 		}
 		
 

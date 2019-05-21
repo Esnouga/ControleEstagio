@@ -22,6 +22,6 @@ public class VagasEstagioController {
 	@RequestMapping(value="/cadastroVagasEstagio", method=RequestMethod.POST)
 	public String form(VagasEstagio vagasEstagio){
 		er.save(vagasEstagio);
-		return "redirect:/cadastroVagasEstagio";
+		return "redirect:/";
 		}
 }

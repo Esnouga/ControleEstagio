@@ -23,6 +23,6 @@ public class RelatorioEstagioController {
 	@RequestMapping(value="/cadastroRelatorioEstagio", method=RequestMethod.POST)
 	public String form(RelatorioEstagio relatorioEstagio){
 		er.save(relatorioEstagio);
-		return "redirect:/cadastroRelatorioEstagio";
+		return "redirect:/";
 		}
 }

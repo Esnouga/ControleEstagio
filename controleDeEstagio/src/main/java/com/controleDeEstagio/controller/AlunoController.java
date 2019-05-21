@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
 import com.controleDeEstagio.models.Aluno;
 import com.controleDeEstagio.repository.AlunoRepository;
 
@@ -18,13 +20,15 @@ public class AlunoController {
 		return "evento/cadastroAluno";
 	}
 	
+	
 	@RequestMapping(value="/cadastroAluno", method=RequestMethod.POST)
 	public String form(Aluno aluno){
 		er.save(aluno);
-		return "redirect:/cadastroAluno";
-		}
-		
-
+		return "redirect:/";
+	}
+	
+	
+	
 	/*
 	@RequestMapping("/eventos")
 	public ModelAndView listaEventos(){

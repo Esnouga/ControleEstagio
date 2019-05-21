@@ -2,18 +2,12 @@
 
 <html xmlns:th="http://thymeleaf.org"
 	  xmlns:layout="http://www.ultrag.net.nz/thymeleaf/layout">	
-<head>
-<title>Controle de estagio</title>
-</head>	  
-
+	  
 <body>
-<h3><a href="/login">Login</a></h3>
-<h3><a href="/cadastroAluno">Cadastro Aluno</a></h3>
-<h3><a href="/cadastroEmpresa">Cadastro Empresa</a></h3>
-<h3><a href="/cadastroRelatorioEstagio">Cadastro Relatório de Estagio</a></h3>
-<h3><a href="/cadastroSupervisor">Cadastro Supervisor de Estagio</a></h3>
-<h3><a href="/cadastroVagasEstagio">Cadastro Vagas de estágio</a></h3>
-<h3><a href="/indexAdmin">admin</a></h3>
+<h1>Visão do administrador</h1>
+<h3><a href="/alunos">Listar Alunos</a></h3>
+
+<h3>Lista de alunos</h3>
 
 <div th:each="aluno : ${alunos}" >
 <div class="row">
@@ -28,6 +22,7 @@
 
 </div>
 </div>
+
 
 
 </body>

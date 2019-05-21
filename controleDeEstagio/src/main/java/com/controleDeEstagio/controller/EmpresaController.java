@@ -21,7 +21,7 @@ public class EmpresaController {
 	@RequestMapping(value="/cadastroEmpresa", method=RequestMethod.POST)
 	public String form(Empresa empresa){
 		er.save(empresa);
-		return "redirect:/cadastroEmpresa";
+		return "redirect:/";
 		}
 	
 }

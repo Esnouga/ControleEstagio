@@ -10,5 +10,6 @@ public class indexController {
 		return "index";
 		
 	}
+		
 
 }
